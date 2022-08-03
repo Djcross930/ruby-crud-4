@@ -22,3 +22,7 @@ Content-Type: application/json
   "year": "long timea ago",
   "isbn": "3421"
 }
+
+###
+
+DELETE http://localhost:3000/books/4

@@ -27,6 +27,13 @@ class BooksController < ApplicationController
     render json: book.to_json
   end
 
+  def destroy
+    book = Book.find_by(id: params[:id])
+    book.destroy
+    render json: {message: "Book Deleted."}
+  end
+
+
 
 
 end
