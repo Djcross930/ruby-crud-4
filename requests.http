@@ -9,11 +9,16 @@ PATCH http://localhost:3000/books/2
 Content-Type: application/json
 
 {
-  "title": "THE necronomicon",
-  "year": "before time",
-  "isbn": "3421"
+  "title": "THE necronomicon"
 }
 
 ###
 
 POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "the bible",
+  "year": "long timea ago",
+  "isbn": "3421"
+}

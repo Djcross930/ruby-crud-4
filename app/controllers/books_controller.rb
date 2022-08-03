@@ -17,4 +17,16 @@ class BooksController < ApplicationController
     book.save
     render json: book.to_json
   end
+
+  def create
+    book = Book.new
+    book.title = params[:title]
+    book.year = params[:year]
+    book.isbn = params[:isbn]
+    book.save
+    render json: book.to_json
+  end
+
+
+
 end
