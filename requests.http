@@ -1,0 +1,19 @@
+get http://localhost:3000/books
+
+###
+
+get http://localhost:3000/books/2
+
+### 
+PATCH http://localhost:3000/books/2
+Content-Type: application/json
+
+{
+  "title": "THE necronomicon",
+  "year": "before time",
+  "isbn": "3421"
+}
+
+###
+
+POST http://localhost:3000/books
